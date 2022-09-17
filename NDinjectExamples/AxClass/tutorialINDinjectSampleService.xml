@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>tutorialINDinjectSampleService</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+public interface tutorialINDinjectSampleService
+{
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>someMethod</Name>
+				<Source><![CDATA[
+    int someMethod(int _a, int _b){}
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

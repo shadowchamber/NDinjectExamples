@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>tutorialNDinjectSampleConsumer</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+public class tutorialNDinjectSampleConsumer
+{
+    private tutorialINDinjectSampleService calc;
+
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>new</Name>
+				<Source><![CDATA[
+    public void new(tutorialINDinjectSampleService _calc)
+    {
+        calc = _calc;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>someUsage</Name>
+				<Source><![CDATA[
+    public int someUsage(int _a, int _b)
+    {
+        return calc.someMethod(_a, _b) + 10;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>main</Name>
+				<Source><![CDATA[
+    public static void main(Args _args)
+    {
+        var ioc = new NDinject()
+                .withBound(classStr(tutorialINDinjectSampleService), classStr(tutorialNDinjectSampleService))
+                .withSelfBound(classStr(tutorialNDinjectSampleConsumer));
+
+        tutorialNDinjectSampleConsumer example = ioc.get(classStr(tutorialNDinjectSampleConsumer));
+        int result = example.someUsage(10, 5);
+        info(strFmt("%1", result));
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

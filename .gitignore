@@ -4,3 +4,6 @@
 /BuildModelResult.log
 /Projects/NDinjectExamples/bin
 /Projects/NDinjectExamples/obj
+/.vs
+*.log
+/BuildProjectResult.xml
