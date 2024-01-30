@@ -35,22 +35,22 @@
     <Folder Include="Classes\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AxClass\tutorialINDinjectSampleService">
+    <Content Include="AxClass\tutorialIInjectNDSampleService">
       <SubType>Content</SubType>
-      <Name>tutorialINDinjectSampleService</Name>
-      <Link>Classes\tutorialINDinjectSampleService</Link>
+      <Name>tutorialIInjectNDSampleService</Name>
+      <Link>Classes\tutorialIInjectNDSampleService</Link>
     </Content>
-    <Content Include="AxClass\tutorialNDinjectSampleConsumer">
+    <Content Include="AxClass\tutorialInjectNDSampleConsumer">
       <SubType>Content</SubType>
-      <Name>tutorialNDinjectSampleConsumer</Name>
-      <Link>Classes\tutorialNDinjectSampleConsumer</Link>
+      <Name>tutorialInjectNDSampleConsumer</Name>
+      <Link>Classes\tutorialInjectNDSampleConsumer</Link>
     </Content>
-    <Content Include="AxClass\tutorialNDinjectSampleService">
+    <Content Include="AxClass\tutorialInjectNDSampleService">
       <SubType>Content</SubType>
-      <Name>tutorialNDinjectSampleService</Name>
-      <Link>Classes\tutorialNDinjectSampleService</Link>
+      <Name>tutorialInjectNDSampleService</Name>
+      <Link>Classes\tutorialInjectNDSampleService</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
-  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
 </Project>

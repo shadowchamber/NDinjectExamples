@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-	<Name>tutorialNDinjectSampleConsumer</Name>
+	<Name>tutorialInjectNDSampleConsumer</Name>
 	<SourceCode>
 		<Declaration><![CDATA[
-public class tutorialNDinjectSampleConsumer
+public class tutorialInjectNDSampleConsumer
 {
-    private tutorialINDinjectSampleService calc;
+    private tutorialInjectNDSampleService calc;
 
 }
 ]]></Declaration>
@@ -13,7 +13,7 @@ public class tutorialNDinjectSampleConsumer
 			<Method>
 				<Name>new</Name>
 				<Source><![CDATA[
-    public void new(tutorialINDinjectSampleService _calc)
+    public void new(tutorialInjectNDSampleService _calc)
     {
         calc = _calc;
     }
@@ -35,11 +35,11 @@ public class tutorialNDinjectSampleConsumer
 				<Source><![CDATA[
     public static void main(Args _args)
     {
-        var ioc = new NDinject()
-                .withBound(classStr(tutorialINDinjectSampleService), classStr(tutorialNDinjectSampleService))
-                .withSelfBound(classStr(tutorialNDinjectSampleConsumer));
+        var ioc = InjectND::construct()  
+                .withBound(classStr(tutorialInjectNDSampleService), classStr(tutorialInjectNDSampleService))
+                .withSelfBound(classStr(tutorialInjectNDSampleConsumer));
 
-        tutorialNDinjectSampleConsumer example = ioc.get(classStr(tutorialNDinjectSampleConsumer));
+        tutorialInjectNDSampleConsumer example = ioc.get(classStr(tutorialInjectNDSampleConsumer));
         int result = example.someUsage(10, 5);
         info(strFmt("%1", result));
     }

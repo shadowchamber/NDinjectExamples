@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-	<Name>tutorialNDinjectSampleService</Name>
+	<Name>tutorialIInjectNDSampleService</Name>
 	<SourceCode>
 		<Declaration><![CDATA[
-public class tutorialNDinjectSampleService implements tutorialINDinjectSampleService
+public interface tutorialIInjectNDSampleService
 {
 }
 ]]></Declaration>
@@ -11,10 +11,7 @@ public class tutorialNDinjectSampleService implements tutorialINDinjectSampleSer
 			<Method>
 				<Name>someMethod</Name>
 				<Source><![CDATA[
-    public int someMethod(int _a, int _b)
-    {
-        return _a - _b;
-    }
+    int someMethod(int _a, int _b){}
 
 ]]></Source>
 			</Method>

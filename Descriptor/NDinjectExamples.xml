@@ -5,7 +5,9 @@
 	<Description></Description>
 	<DisplayName>NDinjectExamples</DisplayName>
 	<Id>925963991</Id>
-	<InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+	<InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:string>NDinjectTests</d2p1:string>
+	</InternalsVisibleTo>
 	<Layer>8</Layer>
 	<Locked>false</Locked>
 	<ModelModule>NDinjectExamples</ModelModule>

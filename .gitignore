@@ -7,3 +7,5 @@
 /.vs
 *.log
 /BuildProjectResult.xml
+/BuildModelResult.err.xml
+/BuildProjectResult.err.xml
